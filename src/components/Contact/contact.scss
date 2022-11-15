@@ -1,0 +1,95 @@
+@import "../../scss/_variables";
+
+.section-contact {
+  padding: 11rem 46.2rem;
+  text-align: center;
+
+  &-subheading {
+    font-size: 1.6rem;
+    font-family: $font-monospace;
+    color: $green;
+    margin-bottom: 2rem;
+  }
+
+  &-heading {
+    font-size: 6rem;
+    color: $light-slate;
+    margin-bottom: 1rem;
+  }
+
+  &-status {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  &-cta:link,
+  &-cta:visited {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid $green;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $green;
+    font-size: 1.6rem;
+    font-family: $font-monospace;
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+  }
+
+  &-cta:hover,
+  &-cta:active {
+    background-color: $green-tint;
+  }
+
+  &-alternatives {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  &-alternatives::before {
+    content: "– ";
+  }
+
+  &-alternatives::after {
+    content: " –";
+  }
+
+  .reset-color {
+    color: $slate;
+    font-family: $font-sans_serif;
+  }
+
+  &-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    a:link,
+    a:visited {
+      color: $light-slate;
+      transition: all 0.3s;
+
+      [name] {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    a:hover,
+    a:active {
+      color: $green;
+    }
+  }
+}
+
+@media (max-width: 44em) {
+  .section-contact {
+    padding: 11rem 32.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .section-contact {
+    padding: 11rem 12.2rem;
+  }
+}

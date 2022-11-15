@@ -1,0 +1,96 @@
+@import "../../scss/_variables";
+
+.section-experience {
+  padding: 11rem 41.2rem;
+
+  &-heading {
+    font-size: 3.2rem;
+    color: $light-slate;
+    margin-bottom: 3.2rem;
+
+    span {
+      font-size: 2.4rem;
+      font-family: $font-monospace;
+      color: $green;
+      font-weight: 400;
+    }
+  }
+
+  &-container {
+    display: flex;
+    gap: 5rem;
+
+    &-company {
+      font-size: 1.5rem;
+      font-family: $font-monospace;
+    }
+
+    &-detail {
+      .job-title {
+        font-size: 2.2rem;
+        margin-bottom: 0.7rem;
+
+        .company-link:link,
+        .company-link:visited {
+          text-decoration: none;
+          color: $green;
+        }
+
+        .company-link:hover,
+        .company-link:active {
+          text-decoration: underline;
+        }
+      }
+
+      .job-title span {
+        color: $green;
+      }
+
+      .duration {
+        font-size: 1.3rem;
+        font-family: $font-monospace;
+        margin-bottom: 2.5rem;
+      }
+
+      .description {
+        font-size: 1.8rem;
+        list-style: none;
+        line-height: 2.3rem;
+      }
+
+      .description li::before {
+        content: "▶";
+        font-size: 0.8rem;
+        margin-right: 1.2rem;
+        color: $green;
+      }
+    }
+  }
+}
+
+@media (max-width: 44em) {
+  .section-experience {
+    padding: 11rem 31.2rem;
+
+    &-container {
+      flex-direction: column;
+      gap: 3rem;
+
+      &-detail {
+        .job-title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  .section-experience {
+    padding: 11rem 12.2rem;
+    &-container {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  color: $slate;
+  font-family: $font-sans_serif;
+}
+
+@media (max-width: 84em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 44em) {
+  html {
+    font-size: 37.5%;
+  }
+}

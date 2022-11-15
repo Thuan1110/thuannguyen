@@ -1,0 +1,99 @@
+@import "../../scss/_variables";
+
+.section-about {
+  padding: 11rem 26.2rem;
+  display: flex;
+  gap: 3rem;
+
+  &-info {
+    max-width: 60rem;
+    &-heading {
+      font-size: 3.2rem;
+      color: $light-slate;
+      margin-bottom: 3.2rem;
+
+      span {
+        font-size: 2.4rem;
+        font-family: $font-monospace;
+        color: $green;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 2.6rem;
+    }
+
+    &-highlight {
+      color: $green;
+    }
+
+    &-techs {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 1.5rem;
+      gap: 1rem;
+      font-family: $font-monospace;
+    }
+
+    &-techs li::before {
+      content: "▶ ";
+      font-size: 0.8rem;
+      color: $green;
+    }
+  }
+
+  &-img {
+    text-align: center;
+    transition: all 0.3s;
+
+    .welcome-text {
+      margin-top: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &-img:hover {
+    transform: translateY(-10px);
+    // .welcome-text {
+    //   display: block;
+    //   font-size: 1.6rem;
+    // }
+  }
+
+  &-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 59em) {
+  .section-about {
+    flex-direction: column;
+    gap: 0;
+    &-info {
+      max-width: 100%;
+    }
+
+    &-img img {
+      width: 20%;
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  .section-about {
+    padding: 11rem 12.2rem;
+    flex-direction: column;
+    gap: 0;
+    &-info {
+      max-width: 100%;
+    }
+
+    &-img img {
+      width: 20%;
+    }
+  }
+}

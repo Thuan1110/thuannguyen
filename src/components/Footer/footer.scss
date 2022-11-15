@@ -1,0 +1,24 @@
+@import "../../scss/_variables";
+
+.footer {
+  padding: 5rem;
+  text-align: center;
+  font-family: $font-monospace;
+  font-size: 1.5rem;
+
+  .built-by {
+    margin-bottom: 1.3rem;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $slate;
+    transition: all 0.3s;
+  }
+
+  a:hover,
+  a:active {
+    color: $green;
+  }
+}

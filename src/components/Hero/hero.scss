@@ -1,0 +1,119 @@
+@import "../../scss/_variables";
+
+.section-hero {
+  padding: 6.4rem 26.2rem;
+  height: 100vh;
+  &-greeting {
+    color: $green;
+    font-size: 1.6rem;
+    font-family: $font-monospace;
+    margin-bottom: 2.4rem;
+  }
+
+  &-name,
+  &-job {
+    color: $light-slate;
+    font-size: 8rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  &-job {
+    color: $slate;
+    margin-bottom: 2.4rem;
+  }
+
+  &-about {
+    font-size: 2rem;
+    max-width: 60%;
+    line-height: 2.6rem;
+    margin-bottom: 5rem;
+  }
+
+  &-cta:link,
+  &-cta:visited {
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    font-family: $font-monospace;
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 4px;
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+
+  &-cta:hover,
+  &-cta:active {
+    background-color: $green-tint;
+  }
+}
+
+@media (max-width: 84em) {
+  .section-hero {
+    &-about {
+      font-size: 2rem;
+      max-width: 70%;
+      line-height: 2.6rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (max-width: 75em) {
+  .section-hero {
+    &-about {
+      font-size: 2rem;
+      max-width: 80%;
+      line-height: 2.6rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (max-width: 59em) {
+  .section-hero {
+    &-name,
+    &-job {
+      font-size: 6.8rem;
+    }
+
+    &-about {
+      font-size: 2rem;
+      max-width: 90%;
+      line-height: 2.6rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (max-width: 44em) {
+  .section-hero {
+    padding: 6.4rem 20.2rem;
+    &-name,
+    &-job {
+      font-size: 6.3rem;
+    }
+
+    &-about {
+      font-size: 2rem;
+      max-width: 90%;
+      line-height: 2.6rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 6.4rem 12.2rem;
+    &-name,
+    &-job {
+      font-size: 5rem;
+    }
+
+    &-about {
+      font-size: 1.8rem;
+    }
+  }
+}
