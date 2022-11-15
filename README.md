@@ -17,7 +17,9 @@ Updating...
 ## Frameworks/libraries
 
 [react](https://reactjs.org/) v18.2.0
+
 [aos](https://michalsnik.github.io/aos/) v3.0.0
+
 [sass](https://sass-lang.com/) v1.56.0
 
 ## Setup
