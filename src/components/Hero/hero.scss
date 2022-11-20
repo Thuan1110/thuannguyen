@@ -51,11 +51,10 @@
 
 @media (max-width: 84em) {
   .section-hero {
+    padding: 6.4rem 20rem;
+
     &-about {
-      font-size: 2rem;
       max-width: 70%;
-      line-height: 2.6rem;
-      margin-bottom: 5rem;
     }
   }
 }
@@ -63,57 +62,44 @@
 @media (max-width: 75em) {
   .section-hero {
     &-about {
-      font-size: 2rem;
-      max-width: 80%;
-      line-height: 2.6rem;
-      margin-bottom: 5rem;
+      max-width: 65%;
     }
   }
 }
 
 @media (max-width: 59em) {
   .section-hero {
-    &-name,
-    &-job {
-      font-size: 6.8rem;
-    }
+    // &-name,
+    // &-job {
+    //   font-size: 6.8rem;
+    // }
 
     &-about {
-      font-size: 2rem;
-      max-width: 90%;
-      line-height: 2.6rem;
-      margin-bottom: 5rem;
+      max-width: 80%;
     }
   }
 }
 
 @media (max-width: 44em) {
   .section-hero {
-    padding: 6.4rem 20.2rem;
-    &-name,
-    &-job {
-      font-size: 6.3rem;
-    }
+    padding: 6.4rem 12rem;
+    // &-name,
+    // &-job {
+    //   font-size: 6.3rem;
+    // }
 
     &-about {
-      font-size: 2rem;
-      max-width: 90%;
-      line-height: 2.6rem;
-      margin-bottom: 5rem;
+      max-width: 100%;
     }
   }
 }
 
 @media (max-width: 34em) {
   .section-hero {
-    padding: 6.4rem 12.2rem;
+    padding: 6.4rem 4rem;
     &-name,
     &-job {
-      font-size: 5rem;
-    }
-
-    &-about {
-      font-size: 1.8rem;
+      font-size: 6.5rem;
     }
   }
 }

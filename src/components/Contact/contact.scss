@@ -82,14 +82,26 @@
   }
 }
 
+@media (max-width: 84em) {
+  .section-contact {
+    padding: 11rem 36rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .section-contact {
+    padding: 11rem 32rem;
+  }
+}
+
 @media (max-width: 44em) {
   .section-contact {
-    padding: 11rem 32.2rem;
+    padding: 11rem 24rem;
   }
 }
 
 @media (max-width: 34em) {
   .section-contact {
-    padding: 11rem 12.2rem;
+    padding: 11rem 4rem;
   }
 }

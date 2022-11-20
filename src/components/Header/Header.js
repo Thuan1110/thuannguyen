@@ -22,31 +22,48 @@ const Header = () => {
   const btnClickedHandler = () => {
     setIsNavExpanded((prevState) => !prevState);
   };
+
   return (
     <header className={fix ? "header scrolled" : "header"}>
-      <a href="#hero" className="logo">
+      <a onClick={btnClickedHandler} href="#hero" className="logo">
         TN.
       </a>
 
-      <nav className={isNavExpanded ? "main-nav expanded " : "main-nav"}>
+      <nav className={isNavExpanded ? "main-nav expanded " : "main-nav "}>
         <ul className="main-nav-list">
           <li>
-            <a href="#about" className="main-nav-link">
+            <a
+              onClick={btnClickedHandler}
+              href="#about"
+              className="main-nav-link"
+            >
               <span>01.</span> About
             </a>
           </li>
           <li>
-            <a href="#experience" className="main-nav-link">
+            <a
+              onClick={btnClickedHandler}
+              href="#experience"
+              className="main-nav-link"
+            >
               <span>02.</span> Experiences
             </a>
           </li>
           <li>
-            <a href="#projects" className="main-nav-link">
+            <a
+              onClick={btnClickedHandler}
+              href="#projects"
+              className="main-nav-link"
+            >
               <span>03.</span> Projects
             </a>
           </li>
           <li>
-            <a href="#contact" className="main-nav-link">
+            <a
+              onClick={btnClickedHandler}
+              href="#contact"
+              className="main-nav-link"
+            >
               <span>04.</span> Contact
             </a>
           </li>

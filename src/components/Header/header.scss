@@ -12,14 +12,13 @@
 
 .scrolled {
   background-color: $background-color;
-  opacity: 0.85;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s;
   z-index: 999;
   box-shadow: $box-shadow;
 }
 
 .logo {
-  font-size: 2.4rem;
+  font-size: 24px;
   color: $green;
 }
 
@@ -76,14 +75,14 @@
 }
 
 .icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 32px;
+  width: 32px;
   color: $green;
 }
 
 @media (max-width: 59em) {
   .header {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   .btn-mobile-nav {
     display: block;
@@ -98,10 +97,8 @@
   .main-nav.expanded {
     .main-nav {
       &-list {
-        display: block;
+        display: inline-block;
         position: absolute;
-        right: 0;
-        top: 40px;
         text-align: center;
         width: 50%;
         height: 100vh;

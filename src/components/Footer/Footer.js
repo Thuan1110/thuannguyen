@@ -4,8 +4,17 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="built-by">Built by Thuan Nguyen </p>
-      <p className="design-by">
+      <p className="built-by">
+        Built by{" "}
+        <a
+          href="https://github.com/Thuan1110/thuannguyen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Thuan Nguyen
+        </a>{" "}
+      </p>
+      {/* <p className="design-by">
         Based on the design of{" "}
         <a
           href="https://github.com/bchiang7/v4"
@@ -14,7 +23,7 @@ const Footer = () => {
         >
           Brittany Chiang
         </a>
-      </p>
+      </p> */}
     </footer>
   );
 };

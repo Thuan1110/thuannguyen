@@ -45,6 +45,35 @@ const About = () => {
           I continue to study and train myself to become a good engineer in the
           future.
         </p>
+
+        <p>
+          Besides studying at school, I also take{" "}
+          <span className="section-about-info-highlight">
+            online courses on Udemy
+          </span>{" "}
+          to improve my frontend skills.
+        </p>
+
+        <p>These are the courses I completed:</p>
+        <ul className="section-about-info-courses">
+          <a
+            href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="course-name"
+          >
+            React - The Complete Guide
+          </a>
+          <a
+            href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="course-name"
+          >
+            Build Responsive Real-World Websites with HTML and CSS
+          </a>
+        </ul>
+
         <p>Here are technologies and tools I've been working with recently:</p>
         <ul className="section-about-info-techs">
           <li>HTML</li>

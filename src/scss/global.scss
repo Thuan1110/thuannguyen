@@ -17,26 +17,36 @@ body {
   font-family: $font-sans_serif;
 }
 
-@media (max-width: 84em) {
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: $background-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $slate;
+  border-radius: 4px;
+}
+
+@media (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
 
-@media (max-width: 75em) {
+@media (max-width: 59em) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 59em) {
-  html {
-    font-size: 43.75%;
-  }
-}
-
 @media (max-width: 44em) {
   html {
-    font-size: 37.5%;
+    font-size: 43.75%;
   }
 }

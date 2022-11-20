@@ -7,6 +7,7 @@
 
   &-info {
     max-width: 60rem;
+
     &-heading {
       font-size: 3.2rem;
       color: $light-slate;
@@ -30,6 +31,33 @@
       color: $green;
     }
 
+    &-courses {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .course-name:link,
+    .course-name:visited {
+      text-decoration: none;
+      color: $slate;
+      font-size: 1.5rem;
+      font-family: $font-monospace;
+      transition: all 0.3s;
+    }
+
+    .course-name:hover,
+    .course-name:active {
+      text-decoration: underline;
+      color: $green;
+    }
+
+    .course-name::before {
+      content: "▹";
+      color: $green;
+    }
+
     &-techs {
       list-style: none;
       display: grid;
@@ -40,8 +68,8 @@
     }
 
     &-techs li::before {
-      content: "▶ ";
-      font-size: 0.8rem;
+      content: "▹";
+      // font-size: 1.2rem;
       color: $green;
     }
   }
@@ -58,10 +86,6 @@
 
   &-img:hover {
     transform: translateY(-10px);
-    // .welcome-text {
-    //   display: block;
-    //   font-size: 1.6rem;
-    // }
   }
 
   &-img img {
@@ -69,31 +93,53 @@
   }
 }
 
+@media (max-width: 84em) {
+  .section-about {
+    padding: 11rem 20rem;
+
+    &-img img {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 75em) {
+  .section-about {
+    &-img img {
+      width: 70%;
+    }
+  }
+}
+
 @media (max-width: 59em) {
   .section-about {
     flex-direction: column;
-    gap: 0;
     &-info {
       max-width: 100%;
     }
 
     &-img img {
-      width: 20%;
+      width: 30%;
     }
+  }
+}
+
+@media (max-width: 44em) {
+  .section-about {
+    padding: 11rem 12rem;
   }
 }
 
 @media (max-width: 34em) {
   .section-about {
-    padding: 11rem 12.2rem;
+    padding: 11rem 4rem;
     flex-direction: column;
     gap: 0;
     &-info {
       max-width: 100%;
-    }
-
-    &-img img {
-      width: 20%;
+      &-techs {
+        column-gap: 0.8rem;
+      }
     }
   }
 }

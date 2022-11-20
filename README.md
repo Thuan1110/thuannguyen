@@ -1,7 +1,7 @@
-# React-movies
+# thuan.netlify.app
 
 ```
-My Personal Website Build With ReactJS
+My Personal Website Build With ReactJS and hosted by with Netlify
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
