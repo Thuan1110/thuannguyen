@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-Updating...
+https://nguyenthuan.netlify.app/
 
 ## Frameworks/libraries
 
